@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今天煮什麼 — 客戶支援</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f9f5f0;
+            color: #333;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: #fff;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+        section { background: #fff; border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        section h2 { font-size: 1.4rem; color: #ff6b35; margin-bottom: 1rem; border-bottom: 2px solid #fde8d8; padding-bottom: 0.5rem; }
+        .intro p { font-size: 1.05rem; color: #555; }
+        .faq-item { margin-bottom: 1.5rem; }
+        .faq-item:last-child { margin-bottom: 0; }
+        .faq-item h3 { font-size: 1rem; color: #222; margin-bottom: 0.3rem; }
+        .faq-item h3::before { content: "Q："; color: #ff6b35; font-weight: bold; }
+        .faq-item p { color: #555; padding-left: 1.5rem; }
+        .faq-item ol { color: #555; padding-left: 3rem; margin-top: 0.3rem; }
+        .contact-info { text-align: center; font-size: 1.1rem; }
+        .contact-info a { color: #ff6b35; text-decoration: none; font-weight: bold; }
+        .contact-info a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 2rem 1rem; color: #999; font-size: 0.85rem; }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            section { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>今天煮什麼（CookToday）</h1>
+    <p>AI 驅動的智慧食譜推薦 App</p>
+</header>
+
+<div class="container">
+
+    <section class="intro">
+        <h2>關於此 App</h2>
+        <p>「今天煮什麼」是一款 AI 驅動的智慧食譜推薦 App。拍下冰箱裡的食材，AI 即時為你量身打造食譜，支援中、西、日、韓、泰式料理及多種特殊飲食需求。</p>
+    </section>
+
+    <section>
+        <h2>常見問題（FAQ）</h2>
+
+        <div class="faq-item">
+            <h3>需要自備 API Key 嗎？</h3>
+            <p>是的。請在 App 內「設定」頁面輸入您的 OpenAI 或 Groq API Key。API 金鑰以 iOS Keychain 加密儲存，安全無虞。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>支援哪些語言？</h3>
+            <p>App 介面支援繁體中文、English、日本語、한국어，可在設定中即時切換，無需重新啟動。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>支援哪些料理風格？</h3>
+            <p>目前支援中式、西式、日式、韓式、泰式共 5 種料理風格。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>有特殊飲食需求怎麼辦？</h3>
+            <p>App 提供 9 種特殊飲食模式，包含兒童餐、銀髮餐、低脂健身、高蛋白增肌、低醣、術後恢復、糖尿病友善、低鈉及低渣飲食。請注意，AI 生成的食譜僅供參考，如有醫療相關飲食需求，請諮詢專業醫師或營養師。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>食譜可以儲存嗎？</h3>
+            <p>可以。每次生成的食譜會自動儲存至「食譜紀錄」，您也可以為成品拍照、一鍵複製分享。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>為什麼食譜生成失敗？</h3>
+            <p>請確認以下事項：</p>
+            <ol>
+                <li>網路連線是否正常</li>
+                <li>API Key 是否正確輸入</li>
+                <li>API 帳戶是否仍有額度</li>
+            </ol>
+            <p>您可以在「設定」頁面點擊「連線測試」確認 API 狀態。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>我的資料安全嗎？</h3>
+            <p>您的 API 金鑰以 iOS Keychain 安全儲存，所有 API 通訊皆透過 HTTPS 加密傳輸。食材與食譜資料僅儲存在您的裝置上，不會上傳至任何伺服器。</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>聯絡我們</h2>
+        <div class="contact-info">
+            <p>如有任何問題、建議或合作洽詢，歡迎來信：</p>
+            <p style="margin-top: 0.8rem; font-size: 1.2rem;">
+                <a href="mailto:thsiao4000@gmail.com">thsiao4000@gmail.com</a>
+            </p>
+            <p style="margin-top: 0.5rem; color: #999;">我們將盡快回覆您的訊息。</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 今天煮什麼（CookToday）. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
