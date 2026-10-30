@@ -11,7 +11,7 @@
 ## 常見問題（FAQ）
 
 **Q：需要自備 API Key 嗎？**
-A：是的。請在 App 內「設定」頁面輸入您的 API Key。
+A：視裝置而定。支援 Apple Intelligence 的裝置（iPhone 15 Pro 以上，或 M1 以上的 iPad，且已更新至 iOS 26.1 以上並在系統設定開啟 Apple Intelligence）可在 App 的「設定」頁選擇「Apple Intelligence（裝置端）」引擎，免費、離線產生食譜，不需要 API Key。其他裝置則需在「設定」頁輸入您的 OpenAI 或 Groq API Key，使用雲端引擎。請注意，AI 圖片生成功能目前仍需 OpenAI API Key。
 
 **Q：支援哪些語言？**
 A：App 介面支援繁體中文、English、日本語、한국어，可在設定中即時切換，無需重新啟動。
