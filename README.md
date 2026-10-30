@@ -45,4 +45,4 @@ A：您的 API Key 透過 iOS Keychain 安全儲存，所有 API 通訊皆透過
 
 ---
 
-© 2025 今天煮什麼（CookToday）. All rights reserved.
+© 2026 今天煮什麼（CookToday）. All rights reserved.
